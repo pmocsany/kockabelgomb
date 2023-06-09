@@ -23,10 +23,12 @@ function init(){
     onClickCalcButton()
 }
 function onClickCalcButton(){
+   if(doc.calcButton){
     doc.calcButton.addEventListener('click',()=>{
-        startCalc()
-    })
-}
+        startCalc()})
+    } 
+    }
+
 function startCalc(){
     let sideStr = doc.sideInput.value
     if(checkInput(sideStr)){
